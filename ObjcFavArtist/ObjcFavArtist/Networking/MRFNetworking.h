@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MRFArtist.h"
 
-NS_ASSUME_NONNULL_BEGIN
+
 
 typedef void (^MRFArtistFetcherCompletionBlock)(MRFArtist *, NSError *);
 
@@ -20,4 +20,3 @@ completionBlock:(MRFArtistFetcherCompletionBlock)completionBlock;
 
 @end
 
-NS_ASSUME_NONNULL_END
