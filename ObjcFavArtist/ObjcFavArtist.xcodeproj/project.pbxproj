@@ -14,6 +14,7 @@
 		1B072087237700BF0045EBFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B072085237700BF0045EBFB /* LaunchScreen.storyboard */; };
 		1B07208A237700BF0045EBFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B072089237700BF0045EBFB /* main.m */; };
 		1B072099237702310045EBFB /* MRFArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B072098237702310045EBFB /* MRFArtist.m */; };
+		1B0720A02377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B07209F2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		1B072089237700BF0045EBFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1B072097237702310045EBFB /* MRFArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFArtist.h; sourceTree = "<group>"; };
 		1B072098237702310045EBFB /* MRFArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFArtist.m; sourceTree = "<group>"; };
+		1B07209E2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRFArtist+MRFArtist_NSJSONSerialization.h"; sourceTree = SOURCE_ROOT; };
+		1B07209F2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MRFArtist+MRFArtist_NSJSONSerialization.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 				1B072095237701AB0045EBFB /* View Controllers */,
 				1B072094237701A10045EBFB /* Views */,
 				1B072096237701B80045EBFB /* Networking */,
+				1B07209A237703430045EBFB /* MRFArtist+NSJSONSerialization */,
 				1B0720932377019A0045EBFB /* Model Controllers */,
 				1B072092237701950045EBFB /* Model */,
 				1B072090237701780045EBFB /* Resources */,
@@ -130,6 +134,15 @@
 			children = (
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		1B07209A237703430045EBFB /* MRFArtist+NSJSONSerialization */ = {
+			isa = PBXGroup;
+			children = (
+				1B07209E2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.h */,
+				1B07209F2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m */,
+			);
+			path = "MRFArtist+NSJSONSerialization";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B072079237700BE0045EBFB /* AppDelegate.m in Sources */,
+				1B0720A02377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m in Sources */,
 				1B07208A237700BF0045EBFB /* main.m in Sources */,
 				1B072099237702310045EBFB /* MRFArtist.m in Sources */,
 				1B07207C237700BE0045EBFB /* SceneDelegate.m in Sources */,

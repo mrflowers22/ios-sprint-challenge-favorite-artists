@@ -10,4 +10,14 @@
 
 @implementation MRFArtist
 
+- (instancetype)initWithArtistName:(NSString *)name bio:(NSString *)bio yearFormed:(double)yearFormed
+{
+    if (self = [super init])
+    {
+        _name = name;
+        _bio = bio;
+        _yearFormed = yearFormed;
+    }
+    return self;
+}
 @end

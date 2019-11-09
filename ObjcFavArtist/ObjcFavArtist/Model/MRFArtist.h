@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MRFArtist : NSObject
 
-@property (nonatomic, readonly, copy)NSString *artist;
+@property (nonatomic, readonly, copy)NSString *name;
 @property (nonatomic, readonly, copy) NSString *bio;
 @property (nonatomic, readonly) double yearFormed;
 
