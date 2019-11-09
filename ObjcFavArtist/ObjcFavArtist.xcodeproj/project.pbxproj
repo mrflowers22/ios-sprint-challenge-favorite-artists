@@ -13,6 +13,7 @@
 		1B072084237700BF0045EBFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B072083237700BF0045EBFB /* Assets.xcassets */; };
 		1B072087237700BF0045EBFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B072085237700BF0045EBFB /* LaunchScreen.storyboard */; };
 		1B07208A237700BF0045EBFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B072089237700BF0045EBFB /* main.m */; };
+		1B072099237702310045EBFB /* MRFArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B072098237702310045EBFB /* MRFArtist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1B072086237700BF0045EBFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B072088237700BF0045EBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B072089237700BF0045EBFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B072097237702310045EBFB /* MRFArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFArtist.h; sourceTree = "<group>"; };
+		1B072098237702310045EBFB /* MRFArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFArtist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 		1B072092237701950045EBFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1B072097237702310045EBFB /* MRFArtist.h */,
+				1B072098237702310045EBFB /* MRFArtist.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 		1B07206C237700BE0045EBFB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MRF;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Michael Flowers";
 				TargetAttributes = {
@@ -199,6 +205,7 @@
 			files = (
 				1B072079237700BE0045EBFB /* AppDelegate.m in Sources */,
 				1B07208A237700BF0045EBFB /* main.m in Sources */,
+				1B072099237702310045EBFB /* MRFArtist.m in Sources */,
 				1B07207C237700BE0045EBFB /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4W7EQ4E4R;
-				INFOPLIST_FILE = ObjcFavArtist/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ObjcFavArtist/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4W7EQ4E4R;
-				INFOPLIST_FILE = ObjcFavArtist/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ObjcFavArtist/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
