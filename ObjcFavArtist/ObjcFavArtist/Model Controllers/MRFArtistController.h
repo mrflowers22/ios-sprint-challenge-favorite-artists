@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MRFArtistController : NSObject
 
 @property (nonatomic, readonly, copy) NSArray<MRFArtist *> *artists;
+
 - (void)createArtistWithName:(NSString *)name
                          bio:(NSString *)bio
                   yearFormed:(double)yearFormed;

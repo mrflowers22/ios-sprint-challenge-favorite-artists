@@ -16,6 +16,7 @@
 		1B072099237702310045EBFB /* MRFArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B072098237702310045EBFB /* MRFArtist.m */; };
 		1B0720A02377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B07209F2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m */; };
 		1B0720A3237706F30045EBFB /* MRFArtistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0720A2237706F30045EBFB /* MRFArtistController.m */; };
+		1BC3489C2377292300A02034 /* MRFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC3489B2377292200A02034 /* MRFNetworking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		1B07209F2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MRFArtist+MRFArtist_NSJSONSerialization.m"; sourceTree = SOURCE_ROOT; };
 		1B0720A1237706F30045EBFB /* MRFArtistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFArtistController.h; sourceTree = "<group>"; };
 		1B0720A2237706F30045EBFB /* MRFArtistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFArtistController.m; sourceTree = "<group>"; };
+		1BC3489A2377292200A02034 /* MRFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFNetworking.h; sourceTree = "<group>"; };
+		1BC3489B2377292200A02034 /* MRFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFNetworking.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 		1B072096237701B80045EBFB /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				1BC3489A2377292200A02034 /* MRFNetworking.h */,
+				1BC3489B2377292200A02034 /* MRFNetworking.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B072079237700BE0045EBFB /* AppDelegate.m in Sources */,
+				1BC3489C2377292300A02034 /* MRFNetworking.m in Sources */,
 				1B0720A02377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m in Sources */,
 				1B07208A237700BF0045EBFB /* main.m in Sources */,
 				1B072099237702310045EBFB /* MRFArtist.m in Sources */,
