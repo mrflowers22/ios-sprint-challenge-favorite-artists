@@ -17,6 +17,8 @@
 		1B0720A02377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B07209F2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m */; };
 		1B0720A3237706F30045EBFB /* MRFArtistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0720A2237706F30045EBFB /* MRFArtistController.m */; };
 		1BC3489C2377292300A02034 /* MRFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC3489B2377292200A02034 /* MRFNetworking.m */; };
+		1BC3489F23773A7A00A02034 /* MRFArtistListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC3489E23773A7A00A02034 /* MRFArtistListTableViewController.m */; };
+		1BC348A223773D6100A02034 /* MRFDetailArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC348A123773D6100A02034 /* MRFDetailArtistViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		1B0720A2237706F30045EBFB /* MRFArtistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFArtistController.m; sourceTree = "<group>"; };
 		1BC3489A2377292200A02034 /* MRFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFNetworking.h; sourceTree = "<group>"; };
 		1BC3489B2377292200A02034 /* MRFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFNetworking.m; sourceTree = "<group>"; };
+		1BC3489D23773A7A00A02034 /* MRFArtistListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFArtistListTableViewController.h; sourceTree = "<group>"; };
+		1BC3489E23773A7A00A02034 /* MRFArtistListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFArtistListTableViewController.m; sourceTree = "<group>"; };
+		1BC348A023773D6100A02034 /* MRFDetailArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFDetailArtistViewController.h; sourceTree = "<group>"; };
+		1BC348A123773D6100A02034 /* MRFDetailArtistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFDetailArtistViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				1B072091237701830045EBFB /* Storyboards */,
+				1BC348A323773DD600A02034 /* Table View Controllers */,
 				1B072095237701AB0045EBFB /* View Controllers */,
 				1B072094237701A10045EBFB /* Views */,
 				1B072096237701B80045EBFB /* Networking */,
@@ -133,6 +140,8 @@
 		1B072095237701AB0045EBFB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1BC348A023773D6100A02034 /* MRFDetailArtistViewController.h */,
+				1BC348A123773D6100A02034 /* MRFDetailArtistViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -153,6 +162,15 @@
 				1B07209F2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m */,
 			);
 			path = "MRFArtist+NSJSONSerialization";
+			sourceTree = "<group>";
+		};
+		1BC348A323773DD600A02034 /* Table View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BC3489D23773A7A00A02034 /* MRFArtistListTableViewController.h */,
+				1BC3489E23773A7A00A02034 /* MRFArtistListTableViewController.m */,
+			);
+			path = "Table View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,10 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC348A223773D6100A02034 /* MRFDetailArtistViewController.m in Sources */,
 				1B072079237700BE0045EBFB /* AppDelegate.m in Sources */,
 				1BC3489C2377292300A02034 /* MRFNetworking.m in Sources */,
 				1B0720A02377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m in Sources */,
 				1B07208A237700BF0045EBFB /* main.m in Sources */,
+				1BC3489F23773A7A00A02034 /* MRFArtistListTableViewController.m in Sources */,
 				1B072099237702310045EBFB /* MRFArtist.m in Sources */,
 				1B0720A3237706F30045EBFB /* MRFArtistController.m in Sources */,
 				1B07207C237700BE0045EBFB /* SceneDelegate.m in Sources */,
