@@ -13,8 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MRFArtist (MRFArtist_NSJSONSerialization)
 
 
-//add an initializer to create the model object
+//add an initializer to create the model object - DECODE
+-(instancetype)initWithDictionary:(NSDictionary *)myDictionary;
 
+//add a method that returns your model object as a NSDictionary - ENCODE ( to a dictionary )
+- (NSDictionary *)toDictionary;
 
 
 
