@@ -15,6 +15,7 @@
 		1B07208A237700BF0045EBFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B072089237700BF0045EBFB /* main.m */; };
 		1B072099237702310045EBFB /* MRFArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B072098237702310045EBFB /* MRFArtist.m */; };
 		1B0720A02377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B07209F2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m */; };
+		1B0720A3237706F30045EBFB /* MRFArtistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0720A2237706F30045EBFB /* MRFArtistController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		1B072098237702310045EBFB /* MRFArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFArtist.m; sourceTree = "<group>"; };
 		1B07209E2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRFArtist+MRFArtist_NSJSONSerialization.h"; sourceTree = SOURCE_ROOT; };
 		1B07209F2377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MRFArtist+MRFArtist_NSJSONSerialization.m"; sourceTree = SOURCE_ROOT; };
+		1B0720A1237706F30045EBFB /* MRFArtistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFArtistController.h; sourceTree = "<group>"; };
+		1B0720A2237706F30045EBFB /* MRFArtistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFArtistController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 		1B0720932377019A0045EBFB /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1B0720A1237706F30045EBFB /* MRFArtistController.h */,
+				1B0720A2237706F30045EBFB /* MRFArtistController.m */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				1B0720A02377044C0045EBFB /* MRFArtist+MRFArtist_NSJSONSerialization.m in Sources */,
 				1B07208A237700BF0045EBFB /* main.m in Sources */,
 				1B072099237702310045EBFB /* MRFArtist.m in Sources */,
+				1B0720A3237706F30045EBFB /* MRFArtistController.m in Sources */,
 				1B07207C237700BE0045EBFB /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

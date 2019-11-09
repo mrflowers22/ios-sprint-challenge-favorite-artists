@@ -14,11 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly, copy)NSString *name;
 @property (nonatomic, readonly, copy) NSString *bio;
-@property (nonatomic, readonly) double yearFormed;
+@property (nonatomic, readonly) int yearFormed;
 
 - (instancetype)initWithArtistName:(NSString *)name
                                bio:(NSString *)bio
-                        yearFormed:(double)yearFormed;
+                        yearFormed:(int)yearFormed;
 
 @end
 
