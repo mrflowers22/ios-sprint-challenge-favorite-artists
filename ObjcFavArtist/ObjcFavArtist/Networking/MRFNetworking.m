@@ -14,7 +14,7 @@
 
 static NSString *baseURLString = @"https://www.theaudiodb.com/api/v1/json/1/searchalbum.php";
 
-- (void)fetchArtistWithName:(NSString *)artistName completionBlock:(MRFArtistFetcherCompletionBlock)completionBlock
+ + (void)fetchArtistWithName:(NSString *)artistName completionBlock:(MRFArtistFetcherCompletionBlock)completionBlock
 {
         //Construct URLComponents since we are going to query
     NSURLComponents *urlcomponents = [[NSURLComponents alloc] initWithString:baseURLString];
@@ -59,7 +59,7 @@ static NSString *baseURLString = @"https://www.theaudiodb.com/api/v1/json/1/sear
             }
                 //turn jsonDictionary into our model object
                 //parse the json according to the api - inside the json (top level) dictionary there is a key named artist that is an array (of dicts)
-            NSArray *artistArray = jsonDict[@"artists"];
+            NSArray *artistArray = jsonDict[@"album"];
             
                 //loop through the array of dicts to get the values (we set in the category for our model)
             for (NSDictionary *dict in artistArray)
@@ -69,6 +69,7 @@ static NSString *baseURLString = @"https://www.theaudiodb.com/api/v1/json/1/sear
                 
                     //check value of artist, if so then complete
                 if (artist){
+                    NSLog(@"artist name: %@", artist.name);
                     completionBlock(artist, nil);
                 }
             }

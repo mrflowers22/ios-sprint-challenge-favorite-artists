@@ -15,7 +15,7 @@ typedef void (^MRFArtistFetcherCompletionBlock)(MRFArtist *, NSError *);
 
 @interface MRFNetworking : NSObject
 
--(void)fetchArtistWithName:(NSString *)artistName
+ + (void)fetchArtistWithName:(NSString *)artistName
 completionBlock:(MRFArtistFetcherCompletionBlock)completionBlock;
 
 @end
