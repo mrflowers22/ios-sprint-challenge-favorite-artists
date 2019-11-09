@@ -1,10 +1,10 @@
-//
-//  MRFArtistListTableViewController.m
-//  ObjcFavArtist
-//
-//  Created by Michael Flowers on 11/9/19.
-//  Copyright © 2019 Michael Flowers. All rights reserved.
-//
+    //
+    //  MRFArtistListTableViewController.m
+    //  ObjcFavArtist
+    //
+    //  Created by Michael Flowers on 11/9/19.
+    //  Copyright © 2019 Michael Flowers. All rights reserved.
+    //
 
 #import "MRFArtistListTableViewController.h"
 #import "MRFArtistController.h"
@@ -17,7 +17,7 @@
 
 @implementation MRFArtistListTableViewController
 
-//initialize the artistController as a lazy property
+    //initialize the artistController as a lazy property
 - (MRFArtistController *)artistController {
     if (_artistController == nil){
         _artistController = [[MRFArtistController alloc] init];
@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.artistController loadFromPersistenceStore];
-       [self.tableView reloadData];
+    [self.tableView reloadData];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -51,30 +51,38 @@
     return cell;
 }
 
-//// Override to support editing the table view.
-//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    if (editingStyle == UITableViewCellEditingStyleDelete) {
-//
-////        MRFArtist *artistToDelete = [self.artistController.artists objectAtIndex:indexPath.row];
-//
-//        // Delete the row from the data source
-//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-//    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-//        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-//    }
-//}
+    //// Override to support editing the table view.
+    //- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    //    if (editingStyle == UITableViewCellEditingStyleDelete) {
+    //
+    ////        MRFArtist *artistToDelete = [self.artistController.artists objectAtIndex:indexPath.row];
+    //
+    //        // Delete the row from the data source
+    //        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    //    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+    //        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    //    }
+    //}
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"cellSegue"])
     {
-        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
         MRFDetailArtistViewController * detailVC = segue.destinationViewController;
+        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+        MRFArtist *artistToPass = [self.artistController.artists objectAtIndex:indexPath.row];
+        
+        detailVC.artist = artistToPass;
+        detailVC.artistController = self.artistController;
+    } else if ([segue.identifier isEqualToString:@"addSegue"])
+    {
+         MRFDetailArtistViewController * detailVC = segue.destinationViewController;
+        detailVC.artistController = self.artistController;
     }
 }
-
-
+                
+                
 @end
