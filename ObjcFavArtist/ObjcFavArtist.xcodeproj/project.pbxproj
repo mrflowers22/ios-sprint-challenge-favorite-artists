@@ -19,6 +19,7 @@
 		1BC3489C2377292300A02034 /* MRFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC3489B2377292200A02034 /* MRFNetworking.m */; };
 		1BC3489F23773A7A00A02034 /* MRFArtistListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC3489E23773A7A00A02034 /* MRFArtistListTableViewController.m */; };
 		1BC348A223773D6100A02034 /* MRFDetailArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC348A123773D6100A02034 /* MRFDetailArtistViewController.m */; };
+		1BC348A62377441000A02034 /* MRFAddArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC348A52377441000A02034 /* MRFAddArtistViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		1BC3489E23773A7A00A02034 /* MRFArtistListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFArtistListTableViewController.m; sourceTree = "<group>"; };
 		1BC348A023773D6100A02034 /* MRFDetailArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFDetailArtistViewController.h; sourceTree = "<group>"; };
 		1BC348A123773D6100A02034 /* MRFDetailArtistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFDetailArtistViewController.m; sourceTree = "<group>"; };
+		1BC348A42377441000A02034 /* MRFAddArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MRFAddArtistViewController.h; path = "ObjcFavArtist/Table View Controllers/MRFAddArtistViewController.h"; sourceTree = SOURCE_ROOT; };
+		1BC348A52377441000A02034 /* MRFAddArtistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MRFAddArtistViewController.m; path = "ObjcFavArtist/Table View Controllers/MRFAddArtistViewController.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 		1B072095237701AB0045EBFB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1BC348A42377441000A02034 /* MRFAddArtistViewController.h */,
+				1BC348A52377441000A02034 /* MRFAddArtistViewController.m */,
 				1BC348A023773D6100A02034 /* MRFDetailArtistViewController.h */,
 				1BC348A123773D6100A02034 /* MRFDetailArtistViewController.m */,
 			);
@@ -253,6 +258,7 @@
 				1B072099237702310045EBFB /* MRFArtist.m in Sources */,
 				1B0720A3237706F30045EBFB /* MRFArtistController.m in Sources */,
 				1B07207C237700BE0045EBFB /* SceneDelegate.m in Sources */,
+				1BC348A62377441000A02034 /* MRFAddArtistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

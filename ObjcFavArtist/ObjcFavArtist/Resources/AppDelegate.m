@@ -18,18 +18,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    [MRFNetworking fetchArtistWithName:@"Macklemore" completionBlock:^(MRFArtist *artist, NSError *error) {
-        if (error)
-        {
-            NSLog(@"Error fetching shit: %@",error);
-            return;
-        }
-        
-        if (artist){
-            NSLog(@"Fetched artist name: %@", artist.name);
-        }
-    }];
-    NSLog(@"the fetch function was called");
+//    [MRFNetworking fetchArtistWithName:@"Macklemore" completionBlock:^(MRFArtist *artist, NSError *error) {
+//        if (error)
+//        {
+//            NSLog(@"Error fetching shit: %@",error);
+//            return;
+//        }
+//        
+//        if (artist){
+//            NSLog(@"Fetched artist name: %@", artist.name);
+//        }
+//    }];
+//    NSLog(@"the fetch function was called");
     return YES;
 }
 

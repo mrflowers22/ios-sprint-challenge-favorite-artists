@@ -10,6 +10,7 @@
 #import "MRFArtistController.h"
 #import "MRFArtist.h"
 #import "MRFDetailArtistViewController.h"
+#import "MRFAddArtistViewController.h"
 
 @interface MRFArtistListTableViewController ()
 
@@ -25,6 +26,11 @@
     return _artistController;
 }
 
+- (IBAction)addButtonTapped:(UIBarButtonItem *)sender
+{
+    [[self navigationController] performSegueWithIdentifier:@"addSegue" sender:self];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +40,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    NSLog(@"artistcontroller array: %i", self.artistController.artists.count);
     [self.tableView reloadData];
 }
 
@@ -79,7 +86,7 @@
         detailVC.artistController = self.artistController;
     } else if ([segue.identifier isEqualToString:@"addSegue"])
     {
-         MRFDetailArtistViewController * detailVC = segue.destinationViewController;
+         MRFAddArtistViewController * detailVC = segue.destinationViewController;
         detailVC.artistController = self.artistController;
     }
 }

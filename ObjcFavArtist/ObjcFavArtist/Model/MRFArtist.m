@@ -10,7 +10,7 @@
 
 @implementation MRFArtist
 
-- (instancetype)initWithArtistName:(NSString *)name bio:(NSString *)bio yearFormed:(double)yearFormed
+- (instancetype)initWithArtistName:(NSString *)name bio:(NSString *)bio yearFormed:(int)yearFormed
 {
     if (self = [super init])
     {

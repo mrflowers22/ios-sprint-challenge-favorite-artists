@@ -7,8 +7,16 @@
 //
 
 #import "MRFDetailArtistViewController.h"
+#import "MRFArtist.h"
+#import "MRFArtistController.h"
+#import "MRFNetworking.h"
 
 @interface MRFDetailArtistViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yearFormedLabel;
+
 
 @end
 
@@ -19,14 +27,27 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setArtist:(MRFArtist *)artist {
+    if (artist != _artist){
+        _artist = artist;
+        NSLog(@"ARTIST WAS SET IN DETAILVC %@", _artist);
+        [self updateViews];
+    }
 }
-*/
+
+
+-(void)updateViews{
+    //check to see if view has loaded
+    if (!self.isViewLoaded || !self.artist){ return; }
+    
+    //grab information out of task
+    self.title = self.artist.name;
+    self.nameLabel.text = self.artist.name;
+    NSString *yearFormedString = [[NSString alloc] initWithFormat:@"%i", self.artist.yearFormed];
+    self.yearFormedLabel.text = yearFormedString;
+    self.textView.text = self.artist.bio;
+    
+}
+
 
 @end
